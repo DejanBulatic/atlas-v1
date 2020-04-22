@@ -77,17 +77,41 @@
     nav #nav-links #dropdown:hover nav #nav-links li #dropdown-menu {
         display: flex;
     }
-    /*** Language dropdown menu end ***/
-
-    /*** Navigation end ***/
+    /*****Hero section*****/
+    .hero-content {
+        padding-top: 270px;
+    }
+    .hero-content .hero-img-wrap {
+        display: none;
+    }
+    .hero-content .hero-text {
+        line-height: 58px;
+    }
+    .hero-content .hero-text h1 {
+        font-size: 2.5rem;
+    }
+    .hero-content .hero-text h2 {
+        font-size: 2.125rem;
+    }
 }
 /***************************************min-width 992px ***************************/
 @media (min-width: 992px) {
+    /****Navigation*****/
     nav #nav-links li {
         margin-left: 1.5rem;
     }
     nav #nav-links li a {
         font-size: 0.9rem;
+    }
+    /*******Hero section******/
+        .hero-content .hero-text {
+        line-height: 67px;
+    }
+    .hero-content .hero-text h1 {
+        font-size: 3rem;
+    }
+    .hero-content .hero-text h2 {
+        font-size: 2.625rem;
     }
 }
 /***************************************min-width 1200px ***************************/
