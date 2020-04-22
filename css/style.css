@@ -25,8 +25,17 @@ html {
 img {
     width: 100%;
 }
+.light {
+    font-family: montserrat-light;
+}
+.medium {
+    font-family: montserrat-medium;
+}
+.bold {
+    font-family: montserrat-bold;
+}
 
-/***Header Start***/
+/********************************Header Start************************************/
 header {
     position: fixed;
     width: 100%;
@@ -101,7 +110,6 @@ nav #nav-links #drop-icon {
     font-size: 15px;
     line-height: 16px;
 }
-/*** Language dropdown menu end ***/
 
 /*** Nav links mobile animation start ***/
 @keyframes navLinkFade {
@@ -116,7 +124,7 @@ nav #nav-links #drop-icon {
 }
 /*** Nav links mobile animation end ***/
 
-/*** Burger button start ***/
+/***Burger button***/
 #burger-div div {
     background: #ffffff;
     border-radius: 5px;
@@ -124,13 +132,37 @@ nav #nav-links #drop-icon {
     height: 3px;
     width: 25px;
     margin: 4px;
-} /*** Burger button end ***/
-/***Header end***/
+}
 
-/***Hero section start***/
+/*************************************************Hero section start****************************************/
 .hero-section {
     background-position: center;
     background-size: cover;
     height: 100vh;
+}
+.hero-content {
+    transform: translateY();
+    text-align: center;
+    padding-top: 100px;
+}
+.hero-content .hero-img-wrap {
+    margin: 0 auto;
+    width: 150px;
+}
+.hero-content .hero-img-wrap img {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.hero-content .hero-text {
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 45px;
+}
+.hero-content .hero-text h1 {
+    font-size: 1.7rem;
+}
+.hero-content .hero-text h2 {
+    font-size: 1.325rem;
 }
 /***Hero section end***/
