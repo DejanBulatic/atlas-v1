@@ -1,6 +1,136 @@
-
 /***Fonts***/
-@font-face { src: url(fonts/Montserrat-Light.otf); font-family: montserrat-light; }
-@font-face { src: url(fonts/Montserrat-Medium.otf); font-family: montserrat-medium; }
-@font-face { src: url(fonts/Montserrat-Bold.otf); font-family: montserrat-bold; }
+@font-face {
+    src: url(../fonts/Montserrat-Light.otf);
+    font-family: montserrat-light;
+}
+@font-face {
+    src: url(../fonts/Montserrat-Medium.otf);
+    font-family: montserrat-medium;
+}
+@font-face {
+    src: url(../fonts/Montserrat-Bold.otf);
+    font-family: montserrat-bold;
+}
 
+/***Global***/
+* {
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 16px;
+}
+img {
+    width: 100%;
+}
+
+/***Header Start***/
+header {
+    position: fixed;
+    width: 100%;
+}
+/*** Navigation start ***/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.2rem;
+}
+nav .nav-logo {
+    width: 100px;
+    display: none;
+}
+nav #nav-links {
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in;
+    padding: 2.25rem 7.8rem 2.25rem 2.25rem;
+}
+nav .nav-active {
+    transform: translateX(0%) !important;
+}
+nav #nav-links li {
+    margin-bottom: 2rem;
+    opacity: 0;
+}
+nav #nav-links li:last-of-type {
+    margin-bottom: 0rem;
+}
+
+nav #nav-links a {
+    color: #6e767a;
+    font-family: montserrat-medium;
+    font-size: 1rem;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+}
+/*** Language dropdown menu start ***/
+nav #nav-links .dropdown-active {
+    font-family: montserrat-bold;
+}
+nav #nav-links li #dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    max-height: 0px;
+    overflow: hidden;
+    transition: 0.2s ease;
+}
+nav #nav-links li .drop-menu-active {
+    max-height: 176px !important;
+    padding: 1rem 0rem !important;
+}
+nav #nav-links li #dropdown-menu a {
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+nav #nav-links li #dropdown-menu a:last-child {
+    margin-bottom: 0rem;
+}
+
+nav #nav-links li .fas {
+    transition: 0.3s ease;
+    font-size: 1.5rem;
+}
+nav #nav-links #drop-icon {
+    font-size: 15px;
+    line-height: 16px;
+}
+/*** Language dropdown menu end ***/
+
+/*** Nav links mobile animation start ***/
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+/*** Nav links mobile animation end ***/
+
+/*** Burger button start ***/
+#burger-div div {
+    background: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 3px;
+    width: 25px;
+    margin: 4px;
+} /*** Burger button end ***/
+/***Header end***/
+
+/***Hero section start***/
+.hero-section {
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+/***Hero section end***/
